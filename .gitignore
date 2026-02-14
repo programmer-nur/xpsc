@@ -14,3 +14,10 @@
 # OS files
 Thumbs.db
 Desktop.ini
+
+**/*.exe
+**/.cph
+**/.cph/*.prob
+**/.vscode
+**/output
+**/*.txt
