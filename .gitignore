@@ -1,0 +1,16 @@
+
+
+# Ignore compiled executables and text files
+*.exe
+*.txt
+
+# Keep Cpp source files
+!*.cpp
+
+# Common IDE/project files
+.vscode/
+/.idea/
+
+# OS files
+Thumbs.db
+Desktop.ini
