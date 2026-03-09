@@ -8,22 +8,25 @@ int main()
 
     int n;
     cin >> n;
+
     map<string, int> mp;
-    while (n--)
+    for (int i = 1; i <= n; i++)
     {
-        string s;
-        cin >> s;
-        if (mp.count(s))
-        {
-            mp.erase(s);
-        }
-        mp[s]++;
+        string name;
+        cin >> name;
+        mp[name] = i;
     }
 
-    for (auto [x, y] : mp)
+    vector<pair<int, string>> v;
+    for (auto x : mp)
     {
-        cout << x << " " << y << endl;
+        v.push_back({x.second, x.first});
     }
 
-    return 0;
+    sort(v.rbegin(), v.rend());
+
+    for (auto x : v)
+    {
+        cout << x.second << endl;
+    }
 }
